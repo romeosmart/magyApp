@@ -1,0 +1,43 @@
+[
+  { "date": "2025-11-03", "nom": "TELMA Madagascar", "libelle": "Abonnement internet professionnel", "type": "Achat", "statut": "Terminé" },
+  { "date": "2025-11-05", "nom": "JIRAMA", "libelle": "Facture électricité siège", "type": "Achat", "statut": "En cours" },
+  { "date": "2025-11-07", "nom": "Starlink Africa", "libelle": "Connexion satellite", "type": "Achat", "statut": "Terminé" },
+  { "date": "2025-11-10", "nom": "Orange Madagascar", "libelle": "Forfait entreprise", "type": "Achat", "statut": "Terminé" },
+  { "date": "2025-11-12", "nom": "AXIAN Group", "libelle": "Conseil stratégique IT", "type": "Vente", "statut": "Terminé" },
+
+  { "date": "2025-11-15", "nom": "Canal+ Madagascar", "libelle": "Installation audiovisuelle", "type": "Vente", "statut": "En cours" },
+  { "date": "2025-11-18", "nom": "Colas Madagascar", "libelle": "Maintenance logiciel interne", "type": "Vente", "statut": "Terminé" },
+  { "date": "2025-11-20", "nom": "Air Madagascar", "libelle": "Développement site web", "type": "Vente", "statut": "En cours" },
+  { "date": "2025-11-22", "nom": "BFV Société Générale", "libelle": "Audit application interne", "type": "Vente", "statut": "Terminé" },
+  { "date": "2025-11-25", "nom": "BOA Madagascar", "libelle": "Formation personnel IT", "type": "Vente", "statut": "Terminé" },
+
+  { "date": "2025-11-27", "nom": "Shoprite Madagascar", "libelle": "Système de gestion stock", "type": "Vente", "statut": "En cours" },
+  { "date": "2025-12-01", "nom": "TotalEnergies Madagascar", "libelle": "Support technique annuel", "type": "Vente", "statut": "Terminé" },
+  { "date": "2025-12-03", "nom": "Vitafoam Madagascar", "libelle": "Maintenance serveur", "type": "Vente", "statut": "Terminé" },
+  { "date": "2025-12-05", "nom": "Airtel Africa", "libelle": "Licence logiciel", "type": "Achat", "statut": "Terminé" },
+  { "date": "2025-12-07", "nom": "Huawei Technologies", "libelle": "Matériel réseau", "type": "Achat", "statut": "En cours" },
+
+  { "date": "2025-12-10", "nom": "Microsoft Africa", "libelle": "Licence Microsoft 365", "type": "Achat", "statut": "Terminé" },
+  { "date": "2025-12-12", "nom": "Google Cloud", "libelle": "Hébergement cloud", "type": "Achat", "statut": "En cours" },
+  { "date": "2025-12-14", "nom": "Amazon Web Services", "libelle": "Serveur cloud mensuel", "type": "Achat", "statut": "Terminé" },
+  { "date": "2025-12-16", "nom": "Meta Business", "libelle": "Publicité digitale", "type": "Achat", "statut": "Terminé" },
+  { "date": "2025-12-18", "nom": "Alibaba Group", "libelle": "Plateforme e-commerce B2B", "type": "Vente", "statut": "En cours" },
+
+  { "date": "2025-12-20", "nom": "Toyota Madagascar", "libelle": "Gestion flotte véhicules", "type": "Vente", "statut": "Terminé" },
+  { "date": "2025-12-22", "nom": "YAS Madagascar", "libelle": "Application mobile interne", "type": "Vente", "statut": "En cours" },
+  { "date": "2025-12-24", "nom": "SOMACOU", "libelle": "Support logiciel comptable", "type": "Vente", "statut": "Terminé" },
+  { "date": "2025-12-26", "nom": "Société Malgache de Transit", "libelle": "Automatisation facturation", "type": "Vente", "statut": "Terminé" },
+  { "date": "2025-12-28", "nom": "Madagascar Oil", "libelle": "Maintenance base de données", "type": "Vente", "statut": "En cours" },
+
+  { "date": "2026-01-02", "nom": "Nestlé Madagascar", "libelle": "Tableau de bord ventes", "type": "Vente", "statut": "Terminé" },
+  { "date": "2026-01-04", "nom": "Unilever Africa", "libelle": "Analyse données marketing", "type": "Vente", "statut": "Terminé" },
+  { "date": "2026-01-06", "nom": "Bolloré Logistics Madagascar", "libelle": "Système de suivi logistique", "type": "Vente", "statut": "En cours" },
+  { "date": "2026-01-08", "nom": "SAVONERIE Tropicale", "libelle": "Application de gestion RH", "type": "Vente", "statut": "Terminé" },
+  { "date": "2026-01-10", "nom": "Groupe SIPROMAD", "libelle": "Audit sécurité informatique", "type": "Vente", "statut": "Terminé" },
+
+  { "date": "2026-01-12", "nom": "Tech2Home", "libelle": "Développement site e-commerce", "type": "Vente", "statut": "Terminé" },
+  { "date": "2026-01-14", "nom": "Hotel Nationale", "libelle": "Système de réservation", "type": "Vente", "statut": "En cours" },
+  { "date": "2026-01-16", "nom": "Strike & Chilli", "libelle": "Caisse et gestion clients", "type": "Vente", "statut": "Terminé" },
+  { "date": "2026-01-18", "nom": "Flora Madagascar", "libelle": "Identité visuelle digitale", "type": "Vente", "statut": "Terminé" },
+  { "date": "2026-01-20", "nom": "HASY Vanille Export", "libelle": "Plateforme exportation", "type": "Vente", "statut": "En cours" }
+]

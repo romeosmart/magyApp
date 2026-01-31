@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion - MAGY Ledger</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Pour icônes si besoin -->
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-card">
+        <h1>MAGY Ledger</h1>
+        <p>Connectez-vous pour accéder à l'archive</p>
+        <form id="loginForm">
+          <div class="input-group">
+            <input
+              type="text"
+              id="username"
+              placeholder="Nom d'utilisateur"
+              required
+            />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="Mot de passe"
+              required
+            />
+            <i class="fas fa-lock"></i>
+          </div>
+          <button type="submit">Se connecter</button>
+        </form>
+        <p id="errorMsg" style="color: red; display: none; margin-top: 8px">
+          Nom ou mot de passe incorrect
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      const errorMsg = document.getElementById("errorMsg");
+
+      // Nom et mot de passe fixe
+      const USER = "admin";
+      const PASS = "magy2026";
+
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        if (username === USER && password === PASS) {
+          localStorage.setItem("loggedIn", "true");
+          window.location.href = "index.html";
+        } else {
+          errorMsg.style.display = "block";
+        }
+      });
+
+      // Redirection si déjà connecté
+      if (localStorage.getItem("loggedIn") === "true") {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MAGY Ledger</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script>
+      // Vérifier si l'utilisateur est connecté
+      if (localStorage.getItem("loggedIn") !== "true") {
+        window.location.href = "login.html";
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>MAGY Ledger</h1>
+      <div class="controls">
+        <div class="radio-group">
+          <input type="radio" name="type" value="all" id="all" checked />
+          <label for="all">Tous</label>
+          <input type="radio" name="type" value="Achat" id="achat" />
+          <label for="achat">Achats</label>
+          <input type="radio" name="type" value="Vente" id="vente" />
+          <label for="vente">Ventes</label>
+        </div>
+        <input type="text" id="search" placeholder="Recherche..." />
+        <label class="theme-toggle">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </span>
+        </label>
+      </div>
+      <button id="logoutBtn">Déconnexion</button>
+    </header>
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Nom</th>
+            <th>Libellé</th>
+            <th>Code</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody id="dataTable">
+          <tr class="loading-row">
+            <td colspan="5">Chargement...</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
