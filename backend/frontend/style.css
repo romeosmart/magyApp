@@ -304,17 +304,17 @@ tbody tr:hover {
     left: 100%;
   }
 }
-
 /* Radios modernes */
 .radio-group label {
   background: var(--radio-bg);
   border: 1.5px solid var(--radio-border);
   color: var(--accent-hover);
   border-radius: 8px;
-  padding: 0.35em 1em;
-  margin-right: 0.5em;
+  padding: 0.22em 0.6em; /* réduit la marge interne */
   cursor: pointer;
   font-weight: 500;
+  margin-right: 0.18em; /* réduit la marge externe */
+  margin-bottom: 0.18em;
   transition:
     background 0.2s,
     border 0.2s,
