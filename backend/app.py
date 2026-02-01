@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request, send_from_directory
+from flask_cors import CORS
 import json
 import os
 
-app = Flask(__name__, static_folder="../frontend", static_url_path="")
+app = Flask(__name__, static_folder="frontend", static_url_path="")
+CORS(app)
 
 # Charger data.json
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data.json")
@@ -23,10 +25,14 @@ def search():
         filtered.append(item)
     return jsonify(filtered)
 
-# Servir index.html
+# Servir index.html et les fichiers statiques
 @app.route("/")
 def index():
     return send_from_directory(app.static_folder, "index.html")
+
+@app.route("/<path:path>")
+def static_proxy(path):
+    return send_from_directory(app.static_folder, path)
 
 if __name__ == "__main__":
     app.run()

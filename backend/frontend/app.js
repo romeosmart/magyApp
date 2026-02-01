@@ -42,13 +42,14 @@ function showLoading() {
   table.innerHTML = `<tr class="loading-row"><td colspan="5">Chargement...</td></tr>`;
 }
 
+// Détection automatique de l'URL backend
+const API_BASE_URL = window.location.origin;
+
 // Charger données depuis Flask
 async function fetchData() {
   showLoading();
   const q = searchInput.value;
-  const res = await fetch(
-    `http://127.0.0.1:5000/search?q=${q}&type=${currentType}`,
-  );
+  const res = await fetch(`${API_BASE_URL}/search?q=${q}&type=${currentType}`);
   const data = await res.json();
   loadData(data);
 }
